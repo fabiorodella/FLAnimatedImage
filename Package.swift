@@ -10,6 +10,9 @@ let package = Package(
         .library(name: "FLAnimatedImage", targets: ["FLAnimatedImage"]),
     ],
     targets: [
-        .target(name: "FLAnimatedImage", path: "FLAnimatedImage")
+        .target(
+            name: "FLAnimatedImage",
+            path: "FLAnimatedImage",
+            publicHeadersPath: "include")
     ]
 )
