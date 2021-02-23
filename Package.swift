@@ -13,6 +13,9 @@ let package = Package(
         .target(
             name: "FLAnimatedImage",
             path: "FLAnimatedImage",
-            publicHeadersPath: "include")
+            publicHeadersPath: "FLAnimatedImage/include",
+            cSettings: [
+                .headerSearchPath("FLAnimatedImage/include"),
+            ])
     ]
 )
